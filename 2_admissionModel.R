@@ -36,7 +36,7 @@ dEd<-apply(dEd, 1, sum)
 dUd<-apply(dUd, 1, sum)
 
 dEd<-data.frame(dEd, rep("Election", length(dEd)))
-names(dEd)<-c("Daily Admission rate", "Urgency")
+names(dEd)<-c("Daily Admission rate", "Elective")
 dUd<-data.frame(dUd, rep("Urgency", length(dUd)))
 names(dUd)<-c("Daily Admission rate", "Urgency")
 dd<-rbind(dEd, dUd)
